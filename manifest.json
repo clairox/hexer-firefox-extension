@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Hexer",
+    "version": "1.0",
+    "description": "Display a color view popup when hovering over hex colors.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "hexer@clairox.com"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/index.js"]
+        }
+    ]
+}
